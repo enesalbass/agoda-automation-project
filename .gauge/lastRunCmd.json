@@ -1,8 +1,6 @@
 [
-	"C:\\Program Files\\Gauge\\bin\\gauge.exe",
+	"gauge",
 	"run",
-	"--machine-readable",
-	"--hide-suggestion",
-	"--simple-console",
-	"C:/Users/enes.albas/Workspaces/testiniumwebproject/specs/reservation_flow.spec"
+	"--dir=C:\\Users\\enes.albas\\Workspaces\\testiniumwebproject",
+	"C:\\Users\\enes.albas\\Workspaces\\testiniumwebproject\\specs"
 ]

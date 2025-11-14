@@ -1,11 +1,7 @@
 {
 	"Args": [
 		"run",
-		"--machine-readable",
-		"--hide-suggestion",
-		"--simple-console"
+		"--dir=C:\\Users\\enes.albas\\Workspaces\\testiniumwebproject"
 	],
-	"FailedItems": [
-		"specs\\reservation_flow.spec:5"
-	]
+	"FailedItems": []
 }

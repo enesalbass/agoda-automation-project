@@ -2,8 +2,9 @@ package com.web.base.utils.driver;
 
 
 import io.github.bonigarcia.wdm.config.DriverManagerType;
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
-import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+//import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 import io.github.bonigarcia.wdm.managers.InternetExplorerDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +23,8 @@ public class DriverFactory {
 
         String browser = System.getenv("BROWSER");
         if (browser == null) {
-            ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+            //ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+            WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--ignore-certificate-errors");
             options.addArguments("--allow-running-insecure-content");
@@ -38,10 +40,11 @@ public class DriverFactory {
                 capabilities.setCapability("ignoreZoomSetting", true);
                 return new InternetExplorerDriver(capabilities);*/
             case "FIREFOX":
-                FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
+                //FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
+                WebDriverManager.firefoxdriver().setup();
                 return new FirefoxDriver();
             default:
-                ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+                //ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--ignore-certificate-errors");
                 options.addArguments("--allow-running-insecure-content");
