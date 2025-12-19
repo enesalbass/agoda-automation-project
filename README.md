@@ -5,7 +5,7 @@ The project is designed to demonstrate clean automation architecture, readable t
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 The **Agoda Automation Project** focuses on automating critical user flows of a web application using behavior-driven test specifications.  
 It showcases my hands-on experience in:
@@ -20,7 +20,7 @@ This project was developed as part of my professional growth in **Software Test 
 
 ---
 
-## 🧰 Technologies Used
+##  Technologies Used
 
 - **Java**
 - **Selenium WebDriver**
@@ -31,5 +31,5 @@ This project was developed as part of my professional growth in **Software Test 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
